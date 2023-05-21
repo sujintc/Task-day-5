@@ -1,0 +1,102 @@
+1.For loop
+_________________
+
+  var json = {
+  "name": "John",
+  "age": 30,
+  "city": "New York"
+};
+
+for (var key in json) {
+  if (json.hasOwnProperty(key)) {
+    console.log(key + ": " + json[key]);
+  }
+}
+___________________________________________________________________________________________________________________________________________________
+
+2. For Each
+________________
+   
+
+var jsonString = '{"name": "John", "age": 30, "city": "New York"}';
+var jsonObject = JSON.parse(jsonString);
+for (var key in jsonObject) {
+  if (jsonObject.hasOwnProperty(key)) {
+    var value = jsonObject[key];
+    console.log(key + ": " + value);
+  }
+}
+____________________________________________________________________________________________________________________________________________________
+
+3.for in
+_____________
+
+         const json = {
+  "name": "John",
+  "age": 30,
+  "city": "New York"
+};
+
+for (const key in json) {
+  if (json.hasOwnProperty(key)) {
+    const value = json[key];
+    console.log(`${key}: ${value}`);
+  }
+}
+____________________________________________________________________________________________________________________________________________________
+
+4.For of
+__________
+
+const json = {
+  key1: 'value1',
+  key2: 'value2',
+  key3: 'value3'
+};
+
+// Convert JSON object to iterable
+const iterable = Object.entries(json);
+
+// Iterate over the JSON object using a for...of loop
+for (const [key, value] of iterable) {
+  console.log(`Key: ${key}, Value: ${value}`);
+}
+____________________________________________________________________________________________________________________________________________________
+
+
+5.Resume using JSON
+_______________________
+
+          
+
+{
+"name": "sujin tc"
+"title": "Software Engineer",
+"contact": {
+
+"email": "tcsujin99@gmail.com"
+"phone": "123-456-7890",
+"address": "123 Main Street, chennai, "tamilnadu"
+},
+{
+"skills": [
+"Programming Languages: Java, JavaScript, Python",
+"Frameworks and Technologies: Spring, React.js, Node.js",
+"Databases: MySQL, MongoDB",
+"Version Control: Git",
+"Agile Methodologies",
+"Problem Solving",
+"Team Leadership",
+"Strong Communication Skills"
+]
+}
+____________________________________________________________________________________________________________________________________________________
+
+3.Difference between window screen and document
+______________________________________________________
+
+                1.The window is the actual global object.
+
+                2.The screen is the screen, it contains properties about the user's display.
+
+                3.The document is where the DOM is.
